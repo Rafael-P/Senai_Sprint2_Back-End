@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "yP55yZeH99S9xB74qpJk1FyaWloMzBUlK/OCFSXIpEReMwIH5VLfbol7+AymIUWc02/e/aT6XTci3izXOfm+tA==",
+  "dgSpecHash": "t0U3Vk6O02T4PgwudP+IjH5UOJYRiWYRu4Mxf6GlQSlqNWzkPwp83w++k4TvHCCwSio5w397ER6LyWe5NCU9qw==",
   "success": true,
   "projectFilePath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\Exercicios\\00-filmes\\senai_filmes_webApi\\senai_filmes_webApi\\senai_filmes_webApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\R4f4e\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\R4f4e\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
