@@ -459,11 +459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\Exercicios\\01-peoples\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi.csproj",
-      "projectName": "Senai.Peoples.WebApi",
-      "projectPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\Exercicios\\01-peoples\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\InLock\\Back-End\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\Senai.InLock.WebApi.csproj",
+      "projectName": "Senai.InLock.WebApi",
+      "projectPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\InLock\\Back-End\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\Senai.InLock.WebApi.csproj",
       "packagesPath": "C:\\Users\\R4f4e\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\Exercicios\\01-peoples\\Senai.Peoples.WebApi\\Senai.Peoples.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\2ºTermo\\Senai_Sprint2_Back-End\\InLock\\Back-End\\Senai.InLock.WebApi\\Senai.InLock.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\R4f4e\\AppData\\Roaming\\NuGet\\NuGet.Config",
