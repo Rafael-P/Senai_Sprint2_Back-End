@@ -3,12 +3,10 @@ using Senai.InLock.WebApi.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Senai.InLock.WebApi.Repositories
 {
-    public class jogosRepository : IJogosRepositories
+    public class jogosRepository : IJogosRepositories 
     {
         private string stringConexao = "Data Source=RAFAEL; initial catalog=inlock_games_manha; user id=sa; pwd=1199700265Ra";
 
@@ -57,8 +55,8 @@ namespace Senai.InLock.WebApi.Repositories
                             idJogos = Convert.ToInt32(rdr["idJogo"]),
                             nome = rdr["nomeJogo"].ToString(),
                             descricao = rdr["descricao"].ToString(),
-                            dataLancamento = rdr["dataLancamento"].ToString(),
-                            valor = Convert.ToInt32(rdr["dataLancamento"]),
+                            dataLancamento = Convert.ToDateTime(rdr["dataLancamento"]),
+                            valor = Convert.ToInt32(rdr["valor"]),
                             idEstudio = Convert.ToInt32(rdr["idEstudio"])
                         };
 
@@ -97,7 +95,7 @@ namespace Senai.InLock.WebApi.Repositories
             {
                 string queryDelete = "DELETE FROM Jogos WHERE idJogo = @ID";
 
-                using (SqlCommand cmd = new SqlCommand(queryDelete))
+                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
                 {
                     cmd.Parameters.AddWithValue("@ID", id);
 
@@ -131,8 +129,8 @@ namespace Senai.InLock.WebApi.Repositories
                             idJogos = Convert.ToInt32(rdr["idJogo"]),
                             nome = rdr["nomeJogo"].ToString(),
                             descricao = rdr["descricao"].ToString(),
-                            dataLancamento = rdr["dataLancamento"].ToString(),
-                            valor = Convert.ToInt32(rdr["dataLancamento"]),
+                            dataLancamento = Convert.ToDateTime(rdr["dataLancamento"]),
+                            valor = Convert.ToInt32(rdr["valor"]),
                             idEstudio = Convert.ToInt32(rdr["idEstudio"])
                         };
 

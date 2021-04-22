@@ -1,15 +1,12 @@
 ﻿using Senai.InLock.WebApi.Domains;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Senai.InLock.WebApi.Interfaces
 {
     /// <summary>
     /// Interface responsavel pelo repositorio jogosRepository
     /// </summary>
-    interface IJogosRepositories
+    interface IJogosRepositories 
     {
         List<jogosDomain> ListarTodos();
 

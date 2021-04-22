@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Senai.InLock.WebApi.Domains
 {
@@ -11,6 +8,8 @@ namespace Senai.InLock.WebApi.Domains
     public class estudiosDomain
     {
         public int idEstudio { get; set; }
+
+        [Required(ErrorMessage = "O nome do estudio é obrigatório!")]
         public string nomeEstudio { get; set; }
     }
 }
