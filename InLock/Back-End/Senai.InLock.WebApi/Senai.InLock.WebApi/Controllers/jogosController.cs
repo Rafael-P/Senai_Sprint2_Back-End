@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Senai.InLock.WebApi.Domains;
 using Senai.InLock.WebApi.Interfaces;
 using Senai.InLock.WebApi.Repositories;
@@ -23,6 +24,8 @@ namespace Senai.InLock.WebApi.Controllers
         /// Lista todos os jogos
         /// </summary>
         /// <returns>Uma lista de jogos e um status code</returns>
+        /// o usuario precisa estar logado para listar todos os generos
+        [Authorize] //verifica se o usuario esta logado
         [HttpGet]
         public IActionResult Get()
         {
@@ -36,6 +39,8 @@ namespace Senai.InLock.WebApi.Controllers
         /// </summary>
         /// <param name="id">id do jogo</param>
         /// <returns>Objeto jogoBusacdo ou notfound se nao encontrar</returns>
+        /// somente o usuario administrador pode buscar um genero pelo id
+        [Authorize(Roles = "1")]
         [HttpGet("{id}")]
         public IActionResult GetId(int id)
         {
@@ -53,6 +58,8 @@ namespace Senai.InLock.WebApi.Controllers
         /// </summary>
         /// <param name="novoJogo">Objeto recebido na requisição</param>
         /// <returns>Um status code</returns>
+        /// 
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Post(jogosDomain novoJogo)
         {
@@ -66,6 +73,8 @@ namespace Senai.InLock.WebApi.Controllers
         /// </summary>
         /// <param name="id">id do jogo que vai ser deletado</param>
         /// <returns>Um status code 204(NoContent)</returns>
+        /// 
+        [Authorize(Roles = "1")]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
@@ -80,6 +89,8 @@ namespace Senai.InLock.WebApi.Controllers
         /// <param name="id">id do jogo</param>
         /// <param name="jogoAtualizado">Objeto que recebera as novas informações</param>
         /// <returns>Retorna um status code</returns>
+        /// 
+        [Authorize(Roles = "1")]
         [HttpPut("{id}")]
         public IActionResult PutUrl(int id, jogosDomain jogoAtualizado)
         {

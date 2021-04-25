@@ -1,12 +1,9 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Senai.InLock.WebApi
 {
@@ -18,6 +15,42 @@ namespace Senai.InLock.WebApi
         {
             //Define o uso de controllers
             services.AddControllers();
+
+            services
+                //define a forma de autenticação
+                .AddAuthentication(options =>
+                {
+                    options.DefaultAuthenticateScheme = "JwtBearer";
+                    options.DefaultChallengeScheme = "JwtBearer";
+                })
+
+                //define os parametros de validaçao do token
+                .AddJwtBearer("JwtBearer", options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        //quem ta emitindo
+                        ValidateIssuer = true,
+
+                        //quem esta recebendo
+                        ValidateAudience = true,
+
+                        //o tempo de expiração
+                        ValidateLifetime = true,
+
+                        //forma de criptografia e a chave de autenticação
+                        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("inlock-chave-autenticacao")),
+
+                        //tempo de expiraçao do token
+                        ClockSkew = TimeSpan.FromMinutes(30),
+
+                        //nome do issuer, de onde esta vindo
+                        ValidIssuer = "InLock.WebApi",
+
+                        //nome do audience, para onde esta indo
+                        ValidAudience = "InLock.WebApi"
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -29,6 +62,12 @@ namespace Senai.InLock.WebApi
             }
 
             app.UseRouting();
+
+            //habilita a autenticaçao
+            app.UseAuthentication();
+
+            //habilita a autorização
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
