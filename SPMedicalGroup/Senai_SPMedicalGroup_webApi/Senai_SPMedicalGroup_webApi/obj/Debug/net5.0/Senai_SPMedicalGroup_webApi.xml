@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Senai_SPMedicalGroup_webApi</name>
+    </assembly>
+    <members>
+        <member name="P:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController._usuariosRepository">
+            <summary>
+            Objeto que irá receber todos os metodos definidos na interface
+            </summary>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController.#ctor">
+            <summary>
+            Instancia o objeto _usuariosRepository para que haja a referencia aos métodos no repositório
+            </summary>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Uma lista de usuarios e um status code 200 - OK</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController.GetById(System.Int32)">
+            <summary>
+            Busca um tipo de usuario pelo seu id
+            </summary>
+            <param name="id">id do usuario</param>
+            <returns>Um usuario e um status code 200 - OK</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController.Post(Senai_SPMedicalGroup_webApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Objeto que sera cadastrado</param>
+            <returns>Um status code Created</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController.Put(System.Int32,Senai_SPMedicalGroup_webApi.Domains.Usuario)">
+            <summary>
+            Atualiza um usuario
+            </summary>
+            <param name="id">id do usuario</param>
+            <param name="usuarioAtualizado">Objeto com as novas informações</param>
+            <returns>Um status code 204 - NoContent</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuario
+            </summary>
+            <param name="id">id do usuario</param>
+            <returns>UM status code 204 - No Content</returns>
+        </member>
+        <member name="T:Senai_SPMedicalGroup_webApi.Interfaces.ITiposUsuarioRepository">
+            <summary>
+            Interface responsavel pelo repositorio TiposUsuarioRepository
+            </summary>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Interfaces.ITiposUsuarioRepository.ListarTodos">
+            <summary>
+            Lista todos os tipos de usuarios
+            </summary>
+            <returns>Retorna uma lista de tipos de usuarios</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Interfaces.ITiposUsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Buscar um usuario pelo id
+            </summary>
+            <param name="id">id do tipo usuario</param>
+            <returns>retorna um objeto do tipo TiposUsuario</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Interfaces.ITiposUsuarioRepository.Cadastrar(Senai_SPMedicalGroup_webApi.Domains.TiposUsuario)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="novoTipoUsuario">Objeto novoTiposUsuario que será cadastrado</param>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Interfaces.ITiposUsuarioRepository.Atualizar(System.Int32,Senai_SPMedicalGroup_webApi.Domains.TiposUsuario)">
+            <summary>
+            Atualiza um tipo de usuario existente
+            </summary>
+            <param name="id">id do tipo de usuario</param>
+            <param name="tipoUsuarioAtualizado">objeto atualizado</param>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Interfaces.ITiposUsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um tipo de usuario existente
+            </summary>
+            <param name="id">id do tipo usuario</param>
+        </member>
+        <member name="T:Senai_SPMedicalGroup_webApi.Interfaces.IUsuarioRepository">
+            <summary>
+            Interface responsavel pelo repositorio UsuarioRepository
+            </summary>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Interfaces.IUsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Valida o usuario
+            </summary>
+            <param name="email">email do usuario</param>
+            <param name="senha">senha do usuario</param>
+            <returns>Um objeto do tipo Usuario que foi buscado</returns>
+        </member>
+        <member name="F:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.ctx">
+            <summary>
+            Objeto contexto por onde serão chamados os métodos do EF Core
+            </summary>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.Atualizar(System.Int32,Senai_SPMedicalGroup_webApi.Domains.Usuario)">
+            <summary>
+            Atualiza um usuario que já existe
+            </summary>
+            <param name="id">id do usuario</param>
+            <param name="usuarioAtualizado">Objeto do tipo usuarioAtualizado com as novas informações</param>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Busca um usuario pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.Cadastrar(Senai_SPMedicalGroup_webApi.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="novoUsuario">Objeto do tipo novoUsuario que sera cadastrado</param>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.Deletar(System.Int32)">
+            <summary>
+            Deleta um usuario pelo seu id
+            </summary>
+            <param name="id">id do usuario</param>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Uma lista de usuarios</returns>
+        </member>
+        <member name="M:Senai_SPMedicalGroup_webApi.Repositories.UsuarioRepository.Login(System.String,System.String)">
+            <summary>
+            Valida o usuário
+            </summary>
+            <param name="email">e-mail do usuário</param>
+            <param name="senha">senha do usuário</param>
+            <returns>Um objeto do tipo Usuario que foi buscado</returns>
+        </member>
+    </members>
+</doc>
