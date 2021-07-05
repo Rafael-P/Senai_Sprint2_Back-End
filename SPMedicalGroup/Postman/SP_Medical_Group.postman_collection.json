@@ -16,7 +16,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDE3NTEyMywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.ipRE_nSpqntIcbSsBPP7af5HbBiNZ-q3tub01vgiS3k",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTQ2MzAsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.Yq-pL3f4GVQ2lXRcdQMecPN9wR-onODOv6bhf6qXMz4\"",
 									"type": "string"
 								}
 							]
@@ -24,7 +24,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/usuario",
+							"raw": "http://localhost:5000/api/usuarios",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -32,7 +32,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"usuario"
+								"usuarios"
 							]
 						}
 					},
@@ -63,7 +63,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/usuario",
+							"raw": "http://localhost:5000/api/usuarios",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -71,7 +71,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"usuario"
+								"usuarios"
 							]
 						}
 					},
@@ -93,7 +93,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/usuario/11",
+							"raw": "http://localhost:5000/api/usuarios/11",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -101,7 +101,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"usuario",
+								"usuarios",
 								"11"
 							]
 						}
@@ -124,7 +124,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/usuario/12",
+							"raw": "http://localhost:5000/api/usuarios/12",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -132,7 +132,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"usuario",
+								"usuarios",
 								"12"
 							]
 						}
@@ -164,7 +164,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/usuario/11",
+							"raw": "http://localhost:5000/api/usuarios/11",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -172,7 +172,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"usuario",
+								"usuarios",
 								"11"
 							]
 						}
@@ -192,7 +192,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDIzNzYxNywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.Gx_IM3Oz18KSiVwbHG4HyLliX7twnuQLgwqiI44WWiQ",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTQ2MzAsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.Yq-pL3f4GVQ2lXRcdQMecPN9wR-onODOv6bhf6qXMz4\"",
 									"type": "string"
 								}
 							]
@@ -200,7 +200,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/consulta",
+							"raw": "http://localhost:5000/api/consultas",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -208,7 +208,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"consulta"
+								"consultas"
 							]
 						}
 					},
@@ -222,7 +222,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDIxNzEwMywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.0AT5juMH9cqKY7zH9tg641aUiT--UxYB-QxPUO4oDK8",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTQ2MzAsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.Yq-pL3f4GVQ2lXRcdQMecPN9wR-onODOv6bhf6qXMz4\"",
 									"type": "string"
 								}
 							]
@@ -230,7 +230,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/consulta/5",
+							"raw": "http://localhost:5000/api/consultas/5",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -238,7 +238,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"consulta",
+								"consultas",
 								"5"
 							]
 						}
@@ -260,7 +260,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/consulta",
+							"raw": "http://localhost:5000/api/consultas",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -268,7 +268,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"consulta"
+								"consultas"
 							]
 						}
 					},
@@ -289,7 +289,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/consulta/11",
+							"raw": "http://localhost:5000/api/consultas/11",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -297,7 +297,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"consulta",
+								"consultas",
 								"11"
 							]
 						}
@@ -319,7 +319,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/consulta/9",
+							"raw": "http://localhost:5000/api/consultas/9",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -327,7 +327,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"consulta",
+								"consultas",
 								"9"
 							]
 						}
@@ -340,7 +340,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/consulta/8",
+							"raw": "http://localhost:5000/api/consultas/8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -348,71 +348,8 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"consulta",
+								"consultas",
 								"8"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Consulta.ListarMinhas",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmlhbmFAb3V0bG9vay5jb20iLCJqdGkiOiIxMCIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IjIiLCJleHAiOjE2MjAyMTk0MzIsImlzcyI6IlNQX01lZGljYWxfR3JvdXAud2ViQXBpIiwiYXVkIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkifQ.IBHfSmhjRgYFznNLvDy5d_2kuhXD61DrsqpUS_xBMvg",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:5000/api/consulta/minhas",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"consulta",
-								"minhas"
-							]
-						}
-					},
-					"response": []
-				},
-				{
-					"name": "Consulta.AtualizarStatus",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDE3NzczOCwiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.ZoMf-MclJXB_MK3ZG757DUts8sV9oRkfGkIa0XTqJ3M",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PATCH",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:5000/api/consulta/9/2",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "5000",
-							"path": [
-								"api",
-								"consulta",
-								"9",
-								"2"
 							]
 						}
 					},
@@ -431,7 +368,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDIzNzYxNywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.Gx_IM3Oz18KSiVwbHG4HyLliX7twnuQLgwqiI44WWiQ",
+									"value": "",
 									"type": "string"
 								}
 							]
@@ -440,7 +377,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\" : \"administrador@adm.com\",\r\n    \"senha\" : \"administrador\"\r\n}",
+							"raw": "{\r\n    \"email\" : \"adm@adm.com\",\r\n    \"senha\" : \"adm\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -475,7 +412,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDIzNzYxNywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.Gx_IM3Oz18KSiVwbHG4HyLliX7twnuQLgwqiI44WWiQ",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTQ2MzAsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.Yq-pL3f4GVQ2lXRcdQMecPN9wR-onODOv6bhf6qXMz4\"",
 									"type": "string"
 								}
 							]
@@ -483,7 +420,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/clinica",
+							"raw": "http://localhost:5000/api/clinicas",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -491,7 +428,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"clinica"
+								"clinicas"
 							]
 						}
 					},
@@ -522,7 +459,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/clinica",
+							"raw": "http://localhost:5000/api/clinicas",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -530,7 +467,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"clinica"
+								"clinicas"
 							]
 						}
 					},
@@ -552,7 +489,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/clinica/1",
+							"raw": "http://localhost:5000/api/clinicas/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -560,7 +497,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"clinica",
+								"clinicas",
 								"1"
 							]
 						}
@@ -592,7 +529,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/clinica/2",
+							"raw": "http://localhost:5000/api/clinicas/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -600,7 +537,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"clinica",
+								"clinicas",
 								"2"
 							]
 						}
@@ -623,7 +560,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/clinica/2",
+							"raw": "http://localhost:5000/api/clinicas/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -631,7 +568,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"clinica",
+								"clinicas",
 								"2"
 							]
 						}
@@ -651,7 +588,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDIzNTU5NSwiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.6rM85JRLbjt02TNHJwoc0i4TdLAKtuDNLLCDJGAB_mk",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTQ2MzAsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.Yq-pL3f4GVQ2lXRcdQMecPN9wR-onODOv6bhf6qXMz4",
 									"type": "string"
 								}
 							]
@@ -827,7 +764,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDIzNzYxNywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.Gx_IM3Oz18KSiVwbHG4HyLliX7twnuQLgwqiI44WWiQ",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTQ2MzAsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.Yq-pL3f4GVQ2lXRcdQMecPN9wR-onODOv6bhf6qXMz4\"",
 									"type": "string"
 								}
 							]
@@ -835,7 +772,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/medico",
+							"raw": "http://localhost:5000/api/medicos",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -843,7 +780,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"medico"
+								"medicos"
 							]
 						}
 					},
@@ -865,7 +802,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/medico/1",
+							"raw": "http://localhost:5000/api/medicos/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -873,7 +810,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"medico",
+								"medicos",
 								"1"
 							]
 						}
@@ -905,7 +842,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/medico",
+							"raw": "http://localhost:5000/api/medicos",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -913,7 +850,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"medico"
+								"medicos"
 							]
 						}
 					},
@@ -944,7 +881,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/medico/4",
+							"raw": "http://localhost:5000/api/medicos/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -952,7 +889,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"medico",
+								"medicos",
 								"4"
 							]
 						}
@@ -975,7 +912,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/medico/4",
+							"raw": "http://localhost:5000/api/medicos/4",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -983,7 +920,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"medico",
+								"medicos",
 								"4"
 							]
 						}
@@ -1003,7 +940,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluaXN0cmFkb3JAYWRtLmNvbSIsImp0aSI6IjExIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMSIsImV4cCI6MTYyMDI0MDg2MywiaXNzIjoiU1BfTWVkaWNhbF9Hcm91cC53ZWJBcGkiLCJhdWQiOiJTUF9NZWRpY2FsX0dyb3VwLndlYkFwaSJ9.KsMm9MKqFr9Ci_OlmdNBBkxPjx9IM7K0p9EwC8niqUU",
+									"value": "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbUBhZG0uY29tIiwianRpIjoiMTEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwicm9sZSI6IjEiLCJleHAiOjE2MjU1MTUwNDUsImlzcyI6InNwbWcud2ViQXBpIiwiYXVkIjoic3BtZy53ZWJBcGkifQ.TZpxTfOZiQAoE3Y-RlgCM5LRLPj2R4zJCRXPJEMR3UY\"",
 									"type": "string"
 								}
 							]
@@ -1011,7 +948,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/especialidade",
+							"raw": "http://localhost:5000/api/especialidades",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1019,7 +956,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"especialidade"
+								"especialidades"
 							]
 						}
 					},
@@ -1041,7 +978,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/especialidade/1",
+							"raw": "http://localhost:5000/api/especialidades/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1049,7 +986,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"especialidade",
+								"especialidades",
 								"1"
 							]
 						}
@@ -1081,7 +1018,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/especialidade",
+							"raw": "http://localhost:5000/api/especialidades",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1089,7 +1026,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"especialidade"
+								"especialidades"
 							]
 						}
 					},
@@ -1120,7 +1057,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5000/api/especialidade/18",
+							"raw": "http://localhost:5000/api/especialidades/18",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1128,7 +1065,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"especialidade",
+								"especialidades",
 								"18"
 							]
 						}
@@ -1151,7 +1088,7 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5000/api/especialidade/18",
+							"raw": "http://localhost:5000/api/especialidades/18",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1159,7 +1096,7 @@
 							"port": "5000",
 							"path": [
 								"api",
-								"especialidade",
+								"especialidades",
 								"18"
 							]
 						}
