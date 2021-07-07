@@ -25,7 +25,7 @@ namespace Senai_SPMedicalGroup_webApi.Controllers
     [ApiController]
 
     //Define que qualquer usuario autenticado pode acesssar aos metodos
-    [Authorize]
+    //[Authorize]
 
     public class ConsultasController : ControllerBase
     {
